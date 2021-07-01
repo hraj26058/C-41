@@ -11,6 +11,8 @@ var form, player, game;
 var cars, car1, car2, car3, car4;
 var track, car1_img, car2_img, car3_img, car4_img;
 
+var xVel,yVel;
+
 function preload(){
   track = loadImage("../images/track.jpg");
   car1_img = loadImage("../images/car1.png");
@@ -26,6 +28,8 @@ function setup(){
   game = new Game();
   game.getState();
   game.start();
+  xVel=0;
+  yVel=0;
 }
 
 
